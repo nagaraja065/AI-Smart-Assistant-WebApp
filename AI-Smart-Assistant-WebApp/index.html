@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nova 2.0 — The Next-Generation AI Voice Assistant. Experience smarter conversations, seamless automation, and the future of voice technology.">
+    <meta name="keywords" content="Nova 2.0, AI voice assistant, artificial intelligence, smart assistant, voice technology, AI updates, product launch">
+    <meta name="author" content="Nova AI">
+    <title>Nova 2.0 — Next-Generation AI Voice Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ===== PARTICLE CANVAS ===== -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo">
+                <img src="assets/images/nova_logo_icon.png" alt="Nova 2.0 Logo" class="logo-img">
+                <span class="logo-text">Nova <span class="logo-version">2.0</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#problem" class="nav-link">Problem</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#updates" class="nav-link">Updates</a></li>
+                <li><a href="#demos" class="nav-link">Demos</a></li>
+                <li><a href="#tips" class="nav-link">Tips</a></li>
+                <li><a href="#generator" class="nav-link">Generator</a></li>
+                <li><a href="#subscribe" class="nav-link nav-cta">Subscribe</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+        <div class="hero-bg-overlay"></div>
+        <img src="assets/images/nova_hero_bg.png" alt="" class="hero-bg-img" loading="eager">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-up">
+                    <span class="badge-dot"></span>
+                    <span>Next-Generation AI Voice Technology</span>
+                </div>
+                <h1 class="hero-title animate-fade-up delay-1">
+                    Meet <span class="gradient-text">Nova 2.0</span>
+                    <br>Your Intelligent Voice Companion
+                </h1>
+                <p class="hero-subtitle animate-fade-up delay-2">
+                    The future of voice interaction is here. Nova 2.0 redefines what an AI assistant can do — 
+                    delivering smarter conversations, seamless automation, and personalized experiences 
+                    powered by cutting-edge artificial intelligence.
+                </p>
+                <div class="hero-actions animate-fade-up delay-3">
+                    <a href="#subscribe" class="btn btn-primary" id="hero-subscribe-btn">
+                        <span>Get Started Free</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#demos" class="btn btn-glass" id="hero-demo-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                        <span>Watch Demo</span>
+                    </a>
+                </div>
+                <div class="hero-stats animate-fade-up delay-4">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-suffix">M+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="99">0</span><span class="stat-suffix">.9%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-up delay-2">
+                <div class="voice-orb" id="voice-orb">
+                    <div class="orb-ring ring-1"></div>
+                    <div class="orb-ring ring-2"></div>
+                    <div class="orb-ring ring-3"></div>
+                    <div class="orb-core">
+                        <img src="assets/images/nova_logo_icon.png" alt="Nova 2.0 AI Orb" class="orb-img">
+                    </div>
+                    <div class="sound-waves">
+                        <div class="wave w1"></div>
+                        <div class="wave w2"></div>
+                        <div class="wave w3"></div>
+                        <div class="wave w4"></div>
+                        <div class="wave w5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator animate-fade-up delay-4">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- ===== PROBLEM STATEMENT SECTION ===== -->
+    <section class="section problem-statement" id="problem">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">The Challenge</span>
+                <h2 class="section-title">Problem <span class="gradient-text">Statement</span></h2>
+                <p class="section-subtitle">Understanding the gap that Nova 2.0 was built to solve.</p>
+            </div>
+            <div class="problem-content">
+                <div class="problem-card problem-card-main" id="problem-main">
+                    <div class="problem-icon-large">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
+                    <p class="problem-text">
+                        In today's rapidly evolving digital landscape, millions of users rely on cloud-based AI platforms for generating text, voice scripts, branding content, and product descriptions. However, these cloud-based solutions come with significant drawbacks — they require a constant internet connection, raise data privacy and security concerns, involve recurring subscription costs, introduce latency due to server-side processing, and offer limited control over the generation process.
+                    </p>
+                </div>
+                <div class="problem-grid">
+                    <div class="problem-card" id="problem-privacy">
+                        <div class="problem-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        </div>
+                        <h3 class="problem-card-title">Privacy & Security Risks</h3>
+                        <p class="problem-card-desc">Cloud-based AI services process sensitive data on external servers, exposing user information to potential breaches and unauthorized access.</p>
+                    </div>
+                    <div class="problem-card" id="problem-internet">
+                        <div class="problem-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="1" y1="1" x2="23" y2="23"/><path d="M16.72 11.06A10.94 10.94 0 0119 12.55"/><path d="M5 12.55a10.94 10.94 0 015.17-2.39"/><path d="M10.71 5.05A16 16 0 0122.56 9"/><path d="M1.42 9a15.91 15.91 0 014.7-2.88"/><path d="M8.53 16.11a6 6 0 016.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+                        </div>
+                        <h3 class="problem-card-title">Internet Dependency</h3>
+                        <p class="problem-card-desc">Existing AI tools require constant internet connectivity, making them unreliable in offline environments or areas with poor network access.</p>
+                    </div>
+                    <div class="problem-card" id="problem-cost">
+                        <div class="problem-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                        </div>
+                        <h3 class="problem-card-title">Recurring Costs</h3>
+                        <p class="problem-card-desc">Subscription-based AI platforms impose ongoing financial burden, especially for individual creators and small businesses.</p>
+                    </div>
+                    <div class="problem-card" id="problem-control">
+                        <div class="problem-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+                        </div>
+                        <h3 class="problem-card-title">Limited Control</h3>
+                        <p class="problem-card-desc">Users have little control over how their data is processed, stored, or used — with no transparency in AI decision-making.</p>
+                    </div>
+                </div>
+                <div class="problem-solution" id="problem-solution">
+                    <div class="solution-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20,6 9,17 4,12"/></svg>
+                        <span>The Solution</span>
+                    </div>
+                    <p class="solution-text">
+                        <strong>Nova 2.0</strong> was developed to address these challenges — enabling users to run AI-powered content generation <em>directly on their local machines</em>, without relying on external servers or cloud infrastructure. This gives users full control over their data, eliminates internet dependency, reduces costs, and allows faster, on-demand content creation with complete privacy. Using Nova 2.0 as the core engine, the system generates polished, publication-ready content by following user-provided prompts and instructions strictly, without adding unnecessary information or deviating from the given task.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="section features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Core Capabilities</span>
+                <h2 class="section-title">Why <span class="gradient-text">Nova 2.0</span> is Different</h2>
+                <p class="section-subtitle">Built from the ground up with advanced neural architecture, Nova 2.0 delivers an experience that feels truly intelligent.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" id="feature-nlp">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"/><line x1="9" y1="21" x2="15" y2="21"/><line x1="10" y1="24" x2="14" y2="24"/></svg>
+                    </div>
+                    <h3 class="feature-title">Advanced NLP Engine</h3>
+                    <p class="feature-desc">Understands context, nuance, and emotion in your voice — delivering responses that feel genuinely human and deeply intuitive.</p>
+                </div>
+                <div class="feature-card" id="feature-multilingual">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg>
+                    </div>
+                    <h3 class="feature-title">50+ Languages</h3>
+                    <p class="feature-desc">Speak naturally in over 50 languages with real-time translation, accent recognition, and cultural context awareness.</p>
+                </div>
+                <div class="feature-card" id="feature-smart-home">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg>
+                    </div>
+                    <h3 class="feature-title">Smart Home Hub</h3>
+                    <p class="feature-desc">Seamlessly control all your IoT devices, automate routines, and create intelligent environments with simple voice commands.</p>
+                </div>
+                <div class="feature-card" id="feature-privacy">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3 class="feature-title">Privacy First</h3>
+                    <p class="feature-desc">End-to-end encryption, on-device processing, and zero data selling — your conversations remain absolutely private.</p>
+                </div>
+                <div class="feature-card" id="feature-learning">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/></svg>
+                    </div>
+                    <h3 class="feature-title">Adaptive Learning</h3>
+                    <p class="feature-desc">Nova 2.0 learns your preferences, habits, and patterns over time — becoming more personalized with every interaction.</p>
+                </div>
+                <div class="feature-card" id="feature-speed">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-desc">Sub-200ms response times powered by edge computing and optimized neural networks — answers before you even finish asking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UPDATES SECTION ===== -->
+    <section class="section updates" id="updates">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">What's New</span>
+                <h2 class="section-title">Latest <span class="gradient-text">Updates & Launches</span></h2>
+                <p class="section-subtitle">Stay ahead of the curve with the latest innovations, product launches, and breakthrough features from Nova 2.0.</p>
+            </div>
+            <div class="updates-timeline">
+                <div class="timeline-line"></div>
+                <div class="update-item" id="update-1">
+                    <div class="update-dot">
+                        <div class="dot-pulse"></div>
+                    </div>
+                    <div class="update-card">
+                        <span class="update-date">March 2026</span>
+                        <h3 class="update-title">🚀 Nova 2.0 Official Launch</h3>
+                        <p class="update-desc">Introducing a completely redesigned voice engine with 3x faster processing, emotion-aware responses, and multi-modal understanding. Available across all platforms.</p>
+                        <div class="update-tags">
+                            <span class="tag">Major Release</span>
+                            <span class="tag">All Platforms</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="update-item" id="update-2">
+                    <div class="update-dot"></div>
+                    <div class="update-card">
+                        <span class="update-date">February 2026</span>
+                        <h3 class="update-title">🌍 Global Language Expansion</h3>
+                        <p class="update-desc">Added support for 15 new languages including Hindi, Arabic, Korean, and Swahili — with native accent recognition and regional dialect support.</p>
+                        <div class="update-tags">
+                            <span class="tag">Languages</span>
+                            <span class="tag">Localization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="update-item" id="update-3">
+                    <div class="update-dot"></div>
+                    <div class="update-card">
+                        <span class="update-date">January 2026</span>
+                        <h3 class="update-title">🔒 Enhanced Privacy Suite</h3>
+                        <p class="update-desc">Rolled out on-device processing for all core functions, eliminating cloud dependency for sensitive commands. Full GDPR and SOC2 compliance.</p>
+                        <div class="update-tags">
+                            <span class="tag">Security</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="update-item" id="update-4">
+                    <div class="update-dot"></div>
+                    <div class="update-card">
+                        <span class="update-date">December 2025</span>
+                        <h3 class="update-title">🏠 Smart Home Integration v3</h3>
+                        <p class="update-desc">Deep integration with over 500+ smart home devices. Create complex automation routines with natural language — no coding required.</p>
+                        <div class="update-tags">
+                            <span class="tag">IoT</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEMOS SECTION ===== -->
+    <section class="section demos" id="demos">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">See It In Action</span>
+                <h2 class="section-title">Real-World <span class="gradient-text">Demonstrations</span></h2>
+                <p class="section-subtitle">Don't just take our word for it. Watch Nova 2.0 handle real-world scenarios with remarkable intelligence and precision.</p>
+            </div>
+            <div class="demos-grid">
+                <div class="demo-card demo-card-large" id="demo-voice">
+                    <img src="assets/images/nova_feature_demo.png" alt="Nova 2.0 Voice Control Demo" class="demo-img" loading="lazy">
+                    <div class="demo-overlay">
+                        <div class="demo-play-btn">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                        <div class="demo-info">
+                            <span class="demo-category">Voice Control</span>
+                            <h3 class="demo-title">Hands-Free Productivity</h3>
+                            <p class="demo-desc">Watch Nova 2.0 manage your calendar, send messages, and control apps — all through natural conversation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-card" id="demo-smart-home">
+                    <img src="assets/images/nova_smart_home.png" alt="Nova 2.0 Smart Home Demo" class="demo-img" loading="lazy">
+                    <div class="demo-overlay">
+                        <div class="demo-play-btn">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                        <div class="demo-info">
+                            <span class="demo-category">Smart Home</span>
+                            <h3 class="demo-title">Intelligent Home Control</h3>
+                            <p class="demo-desc">Experience seamless smart home automation with voice-driven routines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-card" id="demo-translation">
+                    <div class="demo-placeholder">
+                        <div class="demo-placeholder-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10A15.3 15.3 0 018 12 15.3 15.3 0 0112 2z"/></svg>
+                        </div>
+                    </div>
+                    <div class="demo-overlay">
+                        <div class="demo-play-btn">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                        </div>
+                        <div class="demo-info">
+                            <span class="demo-category">Translation</span>
+                            <h3 class="demo-title">Real-Time Translation</h3>
+                            <p class="demo-desc">Break language barriers with instant, natural-sounding translations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TIPS SECTION ===== -->
+    <section class="section tips" id="tips">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Pro Knowledge</span>
+                <h2 class="section-title">Tips & <span class="gradient-text">Insights</span></h2>
+                <p class="section-subtitle">Master Nova 2.0 with expert tips, hidden features, and best practices to supercharge your experience.</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card" id="tip-1">
+                    <div class="tip-number">01</div>
+                    <h3 class="tip-title">Master Wake Commands</h3>
+                    <p class="tip-desc">Customize your wake word beyond "Hey Nova" — set unique phrases, adjust sensitivity, and create context-specific activation triggers for different rooms.</p>
+                    <div class="tip-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-label">Beginner</span>
+                    </div>
+                </div>
+                <div class="tip-card" id="tip-2">
+                    <div class="tip-number">02</div>
+                    <h3 class="tip-title">Create Smart Routines</h3>
+                    <p class="tip-desc">Chain multiple actions into a single voice command. Say "Good morning" to turn on lights, start coffee, read your schedule, and play your favorite playlist.</p>
+                    <div class="tip-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-label">Intermediate</span>
+                    </div>
+                </div>
+                <div class="tip-card" id="tip-3">
+                    <div class="tip-number">03</div>
+                    <h3 class="tip-title">Voice Profiles</h3>
+                    <p class="tip-desc">Set up individual voice profiles for each family member. Nova 2.0 recognizes who's speaking and personalizes responses, playlists, and preferences accordingly.</p>
+                    <div class="tip-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot"></span>
+                        <span class="difficulty-label">Intermediate</span>
+                    </div>
+                </div>
+                <div class="tip-card" id="tip-4">
+                    <div class="tip-number">04</div>
+                    <h3 class="tip-title">Developer API Access</h3>
+                    <p class="tip-desc">Unlock the Nova 2.0 SDK to build custom skills, integrate with your apps, and create bespoke voice experiences for your business or personal projects.</p>
+                    <div class="tip-difficulty">
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-dot active"></span>
+                        <span class="difficulty-label">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AI GENERATOR SECTION ===== -->
+    <section class="section generator" id="generator">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Local AI Power</span>
+                <h2 class="section-title">AI Content <span class="gradient-text">Generator</span></h2>
+                <p class="section-subtitle">Generate professional content right from your laptop. No cloud. No API keys. 100% local processing.</p>
+            </div>
+            <div class="generator-wrapper">
+                <div class="generator-panel">
+                    <div class="gen-controls">
+                        <div class="gen-field">
+                            <label class="gen-label" for="gen-type">Content Type</label>
+                            <select id="gen-type" class="gen-select">
+                                <option value="product_intro">Product Introduction</option>
+                                <option value="feature_description">Feature Description</option>
+                                <option value="update_announcement">Update Announcement</option>
+                                <option value="tip">Tip / Pro Insight</option>
+                                <option value="social_post">Social Media Post</option>
+                                <option value="youtube_description">YouTube Description</option>
+                                <option value="email_newsletter">Email Newsletter</option>
+                                <option value="blog_intro">Blog Post Intro</option>
+                                <option value="problem_statement">Problem Statement</option>
+                            </select>
+                        </div>
+                        <div class="gen-field">
+                            <label class="gen-label" for="gen-tone">Tone</label>
+                            <select id="gen-tone" class="gen-select">
+                                <option value="professional">Professional</option>
+                                <option value="futuristic">Futuristic</option>
+                                <option value="engaging">Engaging</option>
+                                <option value="casual">Casual</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary btn-generate" id="gen-btn" onclick="generateContent()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg>
+                            <span>Generate</span>
+                        </button>
+                    </div>
+                    <div class="gen-divider"><span>or use a custom prompt</span></div>
+                    <div class="gen-custom">
+                        <textarea id="gen-prompt" class="gen-textarea" rows="3" placeholder="e.g. Write a social media post about Nova 2.0's new features..."></textarea>
+                        <button class="btn btn-glass btn-generate-custom" id="gen-custom-btn" onclick="generateCustom()">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22,2 15,22 11,13 2,9"/></svg>
+                            <span>Send Prompt</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="generator-output" id="gen-output">
+                    <div class="gen-output-header">
+                        <span class="gen-output-label">Generated Content</span>
+                        <div class="gen-output-actions">
+                            <button class="gen-action-btn" id="gen-copy-btn" onclick="copyOutput()" title="Copy">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gen-output-content" id="gen-output-text">
+                        <div class="gen-placeholder">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/></svg>
+                            <p>Select a content type and click <strong>Generate</strong> to create AI content locally on your laptop.</p>
+                        </div>
+                    </div>
+                    <div class="gen-meta" id="gen-meta" style="display:none;">
+                        <span id="gen-meta-time"></span>
+                        <span id="gen-meta-words"></span>
+                        <span id="gen-meta-engine"></span>
+                        <span class="gen-meta-local">🔒 Processed Locally</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gen-status-bar" id="gen-status-bar">
+                <div class="status-dot-live"></div>
+                <span id="gen-status-text">Engine ready — all processing happens on this device</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SUBSCRIBE / CTA SECTION ===== -->
+    <section class="section subscribe" id="subscribe">
+        <div class="section-container">
+            <div class="subscribe-wrapper">
+                <div class="subscribe-glow"></div>
+                <div class="subscribe-content">
+                    <span class="section-tag">Join the Revolution</span>
+                    <h2 class="subscribe-title">Ready to Experience the <span class="gradient-text">Future</span>?</h2>
+                    <p class="subscribe-desc">
+                        Subscribe now to get exclusive early access, insider updates, pro tips, and be the first to experience 
+                        every new feature Nova 2.0 has to offer. Join 10M+ users who've already made the switch.
+                    </p>
+                    <form class="subscribe-form" id="subscribe-form">
+                        <div class="form-group">
+                            <input type="email" id="subscribe-email" class="form-input" placeholder="Enter your email address" required autocomplete="email">
+                            <button type="submit" class="btn btn-primary btn-subscribe" id="subscribe-btn">
+                                <span>Subscribe Now</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                        <p class="form-note">🔒 No spam. Unsubscribe anytime. We respect your privacy.</p>
+                    </form>
+                    <div class="subscribe-social">
+                        <p class="social-label">Also follow us on:</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" id="social-twitter" aria-label="X / Twitter">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </a>
+                            <a href="#" class="social-link" id="social-discord" aria-label="Discord">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <img src="assets/images/nova_logo_icon.png" alt="Nova 2.0" class="logo-img">
+                        <span class="logo-text">Nova <span class="logo-version">2.0</span></span>
+                    </a>
+                    <p class="footer-tagline">The future of voice interaction.<br>Smarter. Faster. More Human.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#updates">Updates</a></li>
+                            <li><a href="#demos">Demos</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Resources</h4>
+                        <ul>
+                            <li><a href="#tips">Tips & Tricks</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nova AI. All rights reserved.</p>
+                <p>Designed with ❤️ for the future of voice technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

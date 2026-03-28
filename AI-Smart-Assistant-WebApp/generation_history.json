@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-03-27T11:47:57.681406",
+    "type": "product_intro",
+    "tone": "futuristic",
+    "content_preview": "The future of technology is here. Nova 2.0 is a neural, neural AI voice assistant that transcends the way you sending messages hands-free. Built with ...",
+    "word_count": 56,
+    "generation_time_ms": 0.17
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-27T11:49:54.809892",
+    "type": "product_intro",
+    "tone": "professional",
+    "content_preview": "In the rapidly evolving technology sector, Meet Nova 2.0 — a enterprise-grade AI voice assistant designed to empowers your voice technology. Powered b...",
+    "word_count": 55,
+    "generation_time_ms": 0.16
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-27T11:49:54.900931",
+    "type": "product_intro",
+    "tone": "professional",
+    "content_preview": "In the rapidly evolving technology sector, Meet Nova 2.0 — a scalable AI voice assistant designed to empowers your voice technology. Powered by advanc...",
+    "word_count": 56,
+    "generation_time_ms": 0.16
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-27T11:49:54.958529",
+    "type": "product_intro",
+    "tone": "professional",
+    "content_preview": "Nova 2.0 isn't just another AI voice assistant. It's a sophisticated, sophisticated platform that accelerates natural interactions and streamlines com...",
+    "word_count": 49,
+    "generation_time_ms": 0.19
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-27T11:49:55.052148",
+    "type": "product_intro",
+    "tone": "professional",
+    "content_preview": "For forward-thinking professionals, Meet Nova 2.0 — a premier AI voice assistant designed to empowers your voice technology. Powered by real-time spee...",
+    "word_count": 52,
+    "generation_time_ms": 0.18
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-27T11:50:25.652226",
+    "type": "feature_description",
+    "tone": "futuristic",
+    "content_preview": "Emotion-Aware Responses: Nova 2.0's quantum-ready processor evolves effortless control. Using real-time speech synthesis, it architects lightning-fast...",
+    "word_count": 25,
+    "generation_time_ms": 0.12
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-27T11:50:44.494266",
+    "type": "social_post",
+    "tone": "engaging",
+    "content_preview": "🎙️ The future of voice is here.\n\nNova 2.0 unleashes natural interactions, natural interactions, and intelligent automation.\n\nFollow us for the latest ...",
+    "word_count": 29,
+    "generation_time_ms": 0.07
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-03-27T11:54:33.708691",
+    "type": "youtube_description",
+    "tone": "engaging",
+    "content_preview": "🚀 Nova 2.0 — Your Intelligent Voice Companion\n\nWelcome to the official Nova 2.0 channel! We're building the next generation of AI voice technology — s...",
+    "word_count": 127,
+    "generation_time_ms": 0.09
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-03-27T11:54:53.560579",
+    "type": "youtube_description",
+    "tone": "professional",
+    "content_preview": "🚀 Nova 2.0 — Your Intelligent Voice Companion\n\nWelcome to the official Nova 2.0 channel! We're building the next generation of AI voice technology — s...",
+    "word_count": 127,
+    "generation_time_ms": 0.07
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-03-27T11:55:07.179580",
+    "type": "custom_prompt",
+    "tone": "professional",
+    "content_preview": "For forward-thinking professionals, Nova 2.0 transforms smarter conversations through its sophisticated Custom Wake Commands. Built for the modern use...",
+    "word_count": 38,
+    "generation_time_ms": 0.03
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-03-27T11:57:12.181443",
+    "type": "custom_prompt",
+    "tone": "professional",
+    "content_preview": "For forward-thinking professionals, Meet Nova 2.0 — a enterprise-grade AI voice assistant designed to accelerates your voice technology. Powered by ad...",
+    "word_count": 53,
+    "generation_time_ms": 0.79
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-03-27T11:57:27.396443",
+    "type": "youtube_description",
+    "tone": "professional",
+    "content_preview": "🚀 Nova 2.0 — Smarter. Faster. More Human.\n\nWelcome to the official Nova 2.0 channel! We're building the next generation of AI voice technology — smart...",
+    "word_count": 127,
+    "generation_time_ms": 0.07
+  }
+]
